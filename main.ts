@@ -1,3 +1,4 @@
+let mySprite2: Sprite = null
 let mySprite = sprites.create(img`
     ........................
     ........................
@@ -41,3 +42,23 @@ let mySprite = sprites.create(img`
     ......ee6eeeeee6ce......
     `, SpriteKind.Player)
 scene.setBackgroundColor(9)
+game.onUpdateInterval(500, function () {
+    mySprite2 = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . 3 3 3 3 3 . . . . . . . 
+        . . . . . . . . . 3 3 . . . . . 
+        . . . . . . . . . 3 . . . . . . 
+        . . . . . . 3 3 3 . . . . . . . 
+        . . . . . . 3 . . . . . . . . . 
+        . . . . . . . 3 3 3 . . . . . . 
+        . . . . . . . . . . 3 3 . . . . 
+        . . . . . . . . . . 3 . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Player)
+})
